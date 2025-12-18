@@ -1,16 +1,17 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Desarrollar una aplicación web que consuma la API
+https://randomuser.me/api/?results=100 y permita gestionar usuarios de manera
+interactiva. La aplicación debe incluir login con algun usuario de la API utilizando el objeto
+de login { password} y el campo email , manejo de estados locales y globales,
+edición/eliminación de usuarios, paginación, filtros y una interfaz responsiva.
+Tecnologías (Recomendadas)
+• Frontend: React + Vite
+• Enrutamiento: React Router DOM
+• UI: Material-UI y/o TailwindCSS
+• Manejo de estado global:
+• Context API (con hooks como useContext, useReducer)
+• Redux (con Redux Toolkit preferiblemente)
+• Opcional: Docker para contenerización y despliegue
+Importante:
+Si bien no son estrictamente obligatorias, se espera que el candidato se mantenga dentro
+de este ecosistema tecnológico o utilice alternativas directamente equivalentes y
+alineadas con las prácticas modernas de React.

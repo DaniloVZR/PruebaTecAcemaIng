@@ -1,15 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router"
+import { Home } from "./pages/Home"
+import { Login } from "./pages/login"
+import { Dashboard } from "./pages/Dashboard"
+import { useUsuarioStore } from "./store/UserStore"
+import { useEffect } from "react"
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const { generarUsuarios } = useUsuarioStore();
+
+  useEffect(() => {
+    generarUsuarios()
+  }, [])
 
   return (
-    <div>
-      the Vite and React logos to learn more
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
   )
 }
 

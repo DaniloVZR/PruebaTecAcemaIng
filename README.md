@@ -15,3 +15,8 @@ Importante:
 Si bien no son estrictamente obligatorias, se espera que el candidato se mantenga dentro
 de este ecosistema tecnológico o utilice alternativas directamente equivalentes y
 alineadas con las prácticas modernas de React.
+
+> Pasos para instalar:
+1. git clone (link del repo)
+2. ejecutar comando "npm i"
+3. ejecutar comando "npm run dev"
